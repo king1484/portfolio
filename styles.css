@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: white;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: grey;
+    font-weight: 600;
+    cursor: default;
+}
+
+.navbar a {
+    font-size: 1.7rem;
+    color: black;
+    margin-left: 4rem;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: red;
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    display: none;
+}
+
+section {
+    min-height: 50vh;
+    padding: 10rem 9% 2rem;
+}
+
+.home {
+    display: flex;
+    justify-content: center left;
+}
+
+.home-content h3 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content p {
+    font-size: 20px;
+    line-height: 2;
+}
+
+span {
+    color: red;
+}
+
+.social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid black;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: orange;
+    margin: 3rem 1.5rem 3rem 0;
+}
+
+.social a:hover {
+    background: lightblue;
+}
+
+hr.solid {
+    border-top: 1px solid #bbb;
+}
+
+hr{
+margin: 0% 9% 0% 9%;
+}
+
+.about {
+    padding-top: 20px;
+    display: flex;
+    justify-content: left;
+}
+
+.about h2 {
+    font-size: 32px;
+    padding-bottom: 20px;
+}
+
+.about h3{
+    font-size: 18px;
+}
+
+.about p{
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: white;
+}
+
+.footer p{
+    font-size: 14px;
+}
+
+@media (max-width:600px){
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: white;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .2rem .6rem rgba(0, 0, 0, .1);
+        display: none;
+    }
+
+    .navbar.active{
+        display: block;
+    }
+
+    .navbar a{
+        display: block;
+        font-size: 18px;
+        margin: 1rem 2rem;
+    }
+}
