@@ -234,3 +234,76 @@ hr {
         margin-bottom: 5px;
     }
 }
+
+.projects {
+    padding-top: 20px;
+    display: block;
+    justify-content: left;
+}
+
+.projects h2 {
+    font-size: 32px;
+}
+
+.projects p {
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.project {
+    width: calc(33.33% - 20px);
+    height: 16rem;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #d3d3d3;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.project:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.project p {
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+@media screen and (max-width: 600px) {
+    .project {
+        width: 100%;
+    }
+}
+
+.project-btn {
+    background-color: #c63f41;
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
