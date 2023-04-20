@@ -32,7 +32,7 @@ body {
 
 .logo {
     font-size: 2.5rem;
-    color: grey;
+    color: rgb(77, 74, 74);
     font-weight: 600;
     cursor: default;
 }
@@ -55,7 +55,6 @@ body {
 }
 
 section {
-    min-height: 50vh;
     padding: 10rem 9% 2rem;
 }
 
@@ -73,6 +72,7 @@ section {
     font-size: 56px;
     font-weight: 700;
     line-height: 1.2;
+    padding-right: 40rem;
 }
 
 .home-content p {
@@ -101,6 +101,48 @@ span {
 .social a:hover {
     background: lightblue;
 }
+
+.profile-picture {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 600px) {
+    .home {
+      flex-direction: column-reverse;
+      justify-content: center left;
+    }
+  
+    .profile-picture {
+      margin-bottom: 20px;
+      width: 180px;
+      height: 180px;
+    }
+
+    .home h1{
+        font-size: 44px;
+        font-weight: 600;
+    line-height: 1.1;
+    }
+
+    .home h3{
+        font-size: 29px;
+    }
+
+    .home-content p {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+  }
+  
 
 hr.solid {
     border-top: 1px solid #bbb;
@@ -236,7 +278,7 @@ hr {
 }
 
 .projects {
-    padding-top: 20px;
+    padding-top: 26px;
     display: block;
     justify-content: left;
 }
@@ -259,7 +301,7 @@ hr {
 
 .project {
     width: calc(33.33% - 20px);
-    height: 16rem;
+    height: 18rem;
     margin-bottom: 20px;
     padding: 20px;
     background-color: #ffffff;
@@ -306,4 +348,19 @@ hr {
     border-radius: 20px;
     font-size: 16px;
     cursor: pointer;
-  }
+}
+
+.contact {
+    padding-top: 26px;
+    display: block;
+    justify-content: left;
+}
+
+.contact h2 {
+    font-size: 32px;
+}
+
+.contact p {
+    padding-top: 10px;
+    font-size: 16px;
+}
