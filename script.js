@@ -32,7 +32,7 @@ function isInViewport(element) {
     return (
         rect.top >= 0 &&
         rect.left >= 0 &&
-        rect.bottom <= windowHeight * 1.6 &&
+        rect.bottom <= windowHeight * 1.62 &&
         rect.right <= windowWidth
     );
 }
