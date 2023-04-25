@@ -6,6 +6,7 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
 }
 
 html {
@@ -227,7 +228,7 @@ hr {
 
 .skill-per {
     height: 16px;
-    background: #c63f41;
+    /* background: #c63f41; */
     border-radius: 4px;
     position: relative;
     display: flex;
