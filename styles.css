@@ -88,6 +88,9 @@ section {
         object-fit: cover;
         margin-bottom: 20px;
     }
+    .home{
+        padding: 8rem 9% 2rem;
+    }
 }
 
 .home-content h3 {
